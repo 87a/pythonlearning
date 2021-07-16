@@ -1,2 +1,2 @@
 # pythonlearning
-a folder for <python crash course2nd edition>
+a folder for 'python crash course2nd edition'
