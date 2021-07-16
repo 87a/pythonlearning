@@ -6,7 +6,16 @@
 # SoftWare: PyCharm  创建文件的IDE名称
 import time
 start = time.perf_counter()
-message = input("Tell me something,and I will repeat it back to you:\n")
-print(message)
+prompt = "Tell me something,and I will repeat it back to you:\n"
+prompt += "\nEnter 'quit' to end the program. "
+active = True
+while active:
+    message = input(prompt)
+
+    if message == 'quit':
+        active = False
+    else:
+        print(message)
+
 end = time.perf_counter()
 print('Running time: %s Seconds' % (end - start))
